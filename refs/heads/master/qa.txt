@@ -1,21 +1,18 @@
 ﻿iHRIS Relationship : Validation Results
 =========================================
 
-err = 42, warn = 7, info = 0
+err = 8, warn = 5, info = 0
 IG Publisher Version: 1.1.66
-Generated Thu Apr 15 17:01:22 UTC 2021. FHIR version 4.0.1 for fhir.intrahealth.ihris-relationship#0.2.0 (canonical = http://fhir.org/guides/intrahealth/ihris-relationship)
+Generated Thu Apr 15 17:06:55 UTC 2021. FHIR version 4.0.1 for fhir.intrahealth.ihris-relationship#0.2.0 (canonical = http://fhir.org/guides/intrahealth/ihris-relationship)
 
- Build Errors : 56 / 1 / 0
+ Build Errors : 50 / 0 / 0
  /github/workspace/fsh-generated/resources/StructureDefinition-ihris-relationship : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ihris-report-details : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ihris-report-element : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ihris-report-link : 2 / 1 / 1
  /github/workspace/input/ihris-relationship : 0 / 1 / 1
- /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle : 33 / 1 / 1
 </table>
 == n/a ==
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/StructureDefinition-ihris-relationship.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -244,25 +241,6 @@ ERROR: /github/workspace/output/StructureDefinition-ihris-report-link.profile.js
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 3268 column 45
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 959 column 45
 ERROR: /github/workspace/output/workflows.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -395,7 +373,7 @@ ERROR: /github/workspace/output/artifacts.html: unable to parse character refere
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 381 column 45
+/* ' at line 360 column 45
 ERROR: /github/workspace/output/StructureDefinition-ihris-report-details-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -681,25 +659,6 @@ ERROR: /github/workspace/output/StructureDefinition-ihris-relationship.profile.h
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 366 column 45
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1133 column 45
 ERROR: /github/workspace/output/expected_actions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -719,25 +678,6 @@ ERROR: /github/workspace/output/expected_actions.html: unable to parse character
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 283 column 45
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1016 column 45
 ERROR: /github/workspace/output/StructureDefinition-ihris-report-element-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -814,25 +754,6 @@ ERROR: /github/workspace/output/StructureDefinition-ihris-relationship.profile.x
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 1123 column 45
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 375 column 45
 ERROR: /github/workspace/output/StructureDefinition-ihris-report-element.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -985,25 +906,6 @@ ERROR: /github/workspace/output/security_privacy.html: unable to parse character
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 284 column 45
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.change.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 345 column 45
 ERROR: /github/workspace/output/StructureDefinition-ihris-report-details.profile.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1084,39 +986,3 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-ihris-repor
 == /github/workspace/input/ihris-relationship.xml ==
 INFORMATION: ImplementationGuide/fhir.intrahealth.ihris-relationship: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/fhir.intrahealth.ihris-relationship: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
-== /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml ==
-ERROR: StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle'): Conformance resource /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml - the canonical URL (http://fhir.org/guides/intrahealth/ihris-relationship/StructureMap/svc-map-qr-uvci-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle)
-INFORMATION: StructureMap/svc-map-qr-uvci-bundle: StructureMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureMap
-WARNING: StructureMap/svc-map-qr-uvci-bundle: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name: id value 'Decode_QR' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].name: id value 'Create resources and process bundle' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[0].name: id value 'Decode_QR_Patient' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[1].name: id value 'Decode_QR_Organization' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[2].name: id value 'Decode_QR_Bundle' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].name: id value 'Decode_QR_Patient' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].name: id value 'Load Name' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[1].name: id value 'Load Patient Identifer' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[2].name: id value 'Load Birth Date' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].name: id value 'Decode_QR_Organization' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].rule[0].name: id value 'Load PHA ID' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].name: id value 'Decode_QR_Bundle' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[0].name: id value 'Set Bundle Metadata' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].name: id value 'Load Paper SVC ID' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].name: id value 'Load Signature' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].name: id value 'Process Composition Entry' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].dependent[0].name: id value 'Decode_QR_Composition' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].name: id value 'Decode_QR_Composition' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].input[1].name: id value ',' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[0].name: id value 'Set Composition Meta' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[1].name: id value 'Load Digital SVC ID' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].name: id value 'Decode_QR_Provenance' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].name: id value 'Set provenance' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].source[1].variable: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[3].context: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[4].context: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[5].context: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[6].context: id value 'e_paper' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[7].context: id value 'e_paper' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[8].context: id value 'e_paper' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[0].target[1].variable: id value '"Set who"' is not valid
-ERROR: /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle: URL Mismatch http://fhir.org/guides/intrahealth/ihris-relationship/StructureMap/svc-map-qr-uvci-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle

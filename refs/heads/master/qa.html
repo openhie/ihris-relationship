@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 55, errors = 42, warn = 7, info = 0 -->
+<!-- broken links = 50, errors = 8, warn = 5, info = 0 -->
 <head>
   <title>iHRIS Relationship : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for iHRIS Relationship</h1>
- <p>Generated Thu Apr 15 17:01:22 UTC 2021, FHIR version 4.0.1 for fhir.intrahealth.ihris-relationship#0.2.0 (canonical = <a href="http://fhir.org/guides/intrahealth/ihris-relationship">http://fhir.org/guides/intrahealth/ihris-relationship</a> (<a href="http://fhir.org/guides/intrahealth/ihris-relationship/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Apr 15 17:06:55 UTC 2021, FHIR version 4.0.1 for fhir.intrahealth.ihris-relationship#0.2.0 (canonical = <a href="http://fhir.org/guides/intrahealth/ihris-relationship">http://fhir.org/guides/intrahealth/ihris-relationship</a> (<a href="http://fhir.org/guides/intrahealth/ihris-relationship/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.66</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.intrahealth.ihris-relationship, Canonical = http://fhir.org/guides/intrahealth/ihris-relationship</td></tr>
@@ -36,14 +36,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/intrahealth/ihris-relationship (Problem #1 with package-list.json at http://fhir.org/guides/intrahealth/ihris-relationship: http://fhir.org/guides/intrahealth/ihris-relationship/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 55, errors = 42, warn = 7, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 50, errors = 8, warn = 5, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>56</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>50</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ihris-relationship"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ihris-relationship</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -60,20 +60,11 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_input_ihris-relationship"><b>/github/workspace/input/ihris-relationship</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_input_resources_maps_svc-map-qr-uvci-bundle"><b>/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle</b></a></td><td><b>33</b></td><td><b>1</b></td><td><b>1</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-ihris-relationship.html">StructureDefinition-ihris-relationship.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
@@ -327,27 +318,6 @@
 /* ' at line 3268 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureMap-svc-map-qr-uvci-bundle.ttl.html">StructureMap-svc-map-qr-uvci-bundle.ttl.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add(&quot;sectionId&quot;);  
-            formVars.add(&quot;pageTitle&quot;);  
-            formVars.add(&quot;sectionName&quot;);  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 959 column 45</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="workflows.html">workflows.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -492,7 +462,7 @@
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 381 column 45</b></td>
+/* ' at line 360 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-ihris-report-details-mappings.html">StructureDefinition-ihris-report-details-mappings.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -810,27 +780,6 @@
 /* ' at line 366 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureMap-svc-map-qr-uvci-bundle.json.html">StructureMap-svc-map-qr-uvci-bundle.json.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add(&quot;sectionId&quot;);  
-            formVars.add(&quot;pageTitle&quot;);  
-            formVars.add(&quot;sectionName&quot;);  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1133 column 45</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="expected_actions.html">expected_actions.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -850,27 +799,6 @@
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 283 column 45</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureMap-svc-map-qr-uvci-bundle.xml.html">StructureMap-svc-map-qr-uvci-bundle.xml.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add(&quot;sectionId&quot;);  
-            formVars.add(&quot;pageTitle&quot;);  
-            formVars.add(&quot;sectionName&quot;);  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1016 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-ihris-report-element-mappings.html">StructureDefinition-ihris-report-element-mappings.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -955,27 +883,6 @@
             var parameterVariableName = '';
             var parameterValue = '';
 /* ' at line 1123 column 45</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureMap-svc-map-qr-uvci-bundle.html">StructureMap-svc-map-qr-uvci-bundle.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add(&quot;sectionId&quot;);  
-            formVars.add(&quot;pageTitle&quot;);  
-            formVars.add(&quot;sectionName&quot;);  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 375 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-ihris-report-element.profile.history.html">StructureDefinition-ihris-report-element.profile.history.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -1146,27 +1053,6 @@
 /* ' at line 284 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureMap-svc-map-qr-uvci-bundle.change.history.html">StructureMap-svc-map-qr-uvci-bundle.change.history.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() {
-          var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add(&quot;sectionId&quot;);  
-            formVars.add(&quot;pageTitle&quot;);  
-            formVars.add(&quot;sectionName&quot;);  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url';  //this still needs to be secured
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 345 column 45</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-ihris-report-details.profile.ttl.html">StructureDefinition-ihris-report-details.profile.ttl.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1324,119 +1210,6 @@
      <td><b>ImplementationGuide/fhir.intrahealth.ihris-relationship: ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
    </tr>
 </table>
-<hr/>
-<a name="_github_workspace_input_resources_maps_svc-map-qr-uvci-bundle"> </a>
-<h2><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml - the canonical URL (http://fhir.org/guides/intrahealth/ihris-relationship/StructureMap/svc-map-qr-uvci-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle)</b></td>
-   </tr>
-   <tr style="background-color: #d6feff">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureMap</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap</b></td><td><b>warning</b></td><td title="smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Create resources and process bundle' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Patient' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Organization' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Bundle' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Patient' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load Name' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load Patient Identifer' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load Birth Date' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Organization' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load PHA ID' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Bundle' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Set Bundle Metadata' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load Paper SVC ID' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load Signature' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Process Composition Entry' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].dependent[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Composition' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Composition' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].input[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value ',' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Set Composition Meta' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Load Digital SVC ID' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_QR_Provenance' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Set provenance' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].source[1].variable</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[3].context</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[4].context</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[5].context</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[6].context</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_paper' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[7].context</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_paper' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[8].context</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'e_paper' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[0].target[1].variable</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value '&quot;Set who&quot;' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/intrahealth/ihris-relationship/StructureMap/svc-map-qr-uvci-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle</b></td>
-   </tr>
-</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p><b>Removed errors due to the feedback link</b></p><ul>
@@ -1459,107 +1232,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-ihris-report-link.html">/github/workspace/fsh-generated/resources/StructureDefinition-ihris-report-link.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ihris-report-link.json - the canonical URL (http://fhir.org/guides/intrahealth/ihris-relationship/StructureDefinition/ihris-report-link) does not match the URL (https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-report-link)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>Conformance resource /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml - the canonical URL (http://fhir.org/guides/intrahealth/ihris-relationship/StructureMap/svc-map-qr-uvci-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Type_Specific_Checks_DT_ID_Valid"> </a>
-<h2>Type_Specific_Checks_DT_ID_Valid</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Create resources and process bundle' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Patient' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Organization' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Bundle' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Patient' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load Name' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load Patient Identifer' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load Birth Date' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Organization' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load PHA ID' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Bundle' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Set Bundle Metadata' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load Paper SVC ID' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load Signature' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Process Composition Entry' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Composition' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Composition' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value ',' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Set Composition Meta' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Load Digital SVC ID' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Decode_QR_Provenance' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'Set provenance' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_digital' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_paper' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_paper' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value 'e_paper' is not valid</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value '&quot;Set who&quot;' is not valid</b></td>
    </tr>
 </table>
 </body>

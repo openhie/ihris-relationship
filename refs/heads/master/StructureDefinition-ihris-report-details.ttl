@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "IhrisReportDetails"];
   fhir:StructureDefinition.title [ fhir:value "Details of a report"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-15T17:01:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-04-15T17:06:41+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "IntraHealth International"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

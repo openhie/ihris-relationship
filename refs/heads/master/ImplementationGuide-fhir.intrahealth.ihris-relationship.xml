@@ -283,14 +283,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureMap"/>
-      </extension>
-      <reference>
-        <reference value="StructureMap/svc-map-qr-uvci-bundle"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
