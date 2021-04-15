@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR.INTRAHEALTH.IHRIS-RELATIONSHIP\Narrative - FHIR v4.0.1</title>
+    <title>FHIR.INTRAHEALTH.IHRIS-RELATIONSHIP\Concepts - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1"}
-    h3,h4,h5,h6{--heading-prefix:"1.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -161,7 +161,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Narrative</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='requirements.html'><b>Business Requirements</b></a></li><li><b>Concepts</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -180,58 +180,61 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  <h2>Narrative</h2>
+  <h2>Concepts</h2>
   
-  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Summary</a></li><li><a href="#2">About This Implementation Guide</a></li><li><a href="#3">Disclaimer</a></li></ul></div>
-  <a name="scope">   </a>
+  <div xmlns="http://www.w3.org/1999/xhtml">
 
-      
-  
   <p>
-    This is the FHIR Implementation Guide for the iHRIS Relationship.
+  You can use iHRIS relationships to define howto to cache data form a FHIR Server (e.g. HAPI) into a datamart and search engine (e.g. ElasticSearch) through utilities such as <a href="https://github.com/intrahealth/fhir2es">fhir2es</a>.
   </p>
 
-  <blockquote class="stu-note">
-    <ul>
-
-      <li>   <strong>This implementation guide and set of artifacts are still undergoing development.</strong> </li>
-      <li>   This content is only for demonstration purposes only. </li>
-    </ul>
-  </blockquote>
-  
-
-  <a name="1"/><h3>Summary</h3> <a name="summary">  </a>
-
-
   <p>
-    This Implementation Guide (IG) contains the full set of specifications for the iHRIS Relationship set of resources which defines a rooted graph within the FHIR data model.  The intent of this IG is to provide a way to "flatten" FHIR resources for easy indexing and reporting for seaching and business intelligence tools (e.g ElasticSearch and Kibana).
+    The iHRIS relationships are used to flatten the graph-like data model of FHIR to tablular data.  To achieve this you need to define a relationship which is a rooted sub-graph of the FHIR data model. You start with definining a primary resource (the root resource) and then you join other resources to it.
   </p>
-  
+  <ul>
+    <li>
+      The primary resource is defined under the iHRISReportDetails extension
+      <ul>
+	<li> the name must be unique</li>
+	<li> resource is just the resource name that you are adding to the relationship</li>
+	<li> query is a FHIR path on how you want the resource you are adding to be filtered</li>
+      </ul>
+    </li>
+    <li>
+      The fields of any joined resources in the relationship are defined under the iHRISReportElement extension.
+      <ul>
+	<li>label is the field name to be created in elasticsearch and must be unique</li>
+	<li>display is the human readable field name and it is used by the datamart (e.g. ElasticSaerch) to be displayed to systems </li>
+	<li>name is the FHIR path to the resource field</li>
+	<li>filter and dropDownFilter are both used  to tell if a field should be displayed as a filter and whether it should be a drop down of values or not respectively.  This is not reuiqred if you dont need these if you dont want to use the iHRIS reporting engine to display ES data</li>
+      </ul>
+    </li>
+    <li>
+      You join other resources to the primary resource by using the iHRISReportLink extension.
+      <ul>
+	<li> the name must be unique</li>
+	<li> resource is just the resource name that you are adding to the relationship</li>
+	<li> query is a FHIR path on how you want the resource you are adding to be filtered</li>
+	<li>linkElement is the field that this resource uses to link to the resource in the relationship </li>
+	<li>linkTo is the name of the resource it links to (this isnt a resource name but it is the name extension under either iHRISReportLink or iHRISReportDetails, which is unique in the relationship)</li>
+	<li>linkElementSearchParameter is used for reverse linked resources.  For example only, if you start with Practitioner and then join PractitionerRole, you will need to tell the search parameter for practitioner in PractitionerRole, which is 'practitioner', but if you start with PractitionerRole and then join Practitioner then you don't need this.</li>
+      </ul>
 
-  
 
-  <a name="2"/><h3>About This Implementation Guide</h3> <a name="about">  </a>
-  
+    </li>
+  </ul>
+
+
+
+
+
+
   <p>
-    This Implementation Guide is broken into the following levels of <a href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</a>:
-    <ul>
-      <li><a href="index.html">Narrative</a> Contains references to the guidance, guidlines, policies and recommemndations underpinning this Implementation Guide</li>
-      <li><a href="requirements.html">Business Requirements</a> Contains the requirements for this Implementation Guide including the defintition of key concepts, user personas, use cases and workflows.
-      </li>
-      <li><a href="data_exchange.html">Data Models and Exchange</a> Contains the data models and data exchange protocols defined in this Implementation Guide.</li>
-      <li><a href="deployment.html">Deployment Guidance </a>
-      Contains technical specifications and guidance relevant to this Implementation Guide and supporting guidance for adaptation in local environments.</li>
-    </ul>
-  </p>  
-
-
-
-  <a name="3"/><h3>Disclaimer</h3>  <a name="disclaimer">  </a>
-  <p>
-    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
+    There is an <a href="https://github.com/intrahealth/fhir2es">example</a> of one of the relationships that can be loaded into HAPI and fhir2es will index data based on the definition
   </p>
+
+
+
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->

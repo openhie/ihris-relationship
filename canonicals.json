@@ -1,0 +1,44 @@
+[
+  {
+    "id": "fhir.intrahealth.ihris-relationship",
+    "type": "ImplementationGuide",
+    "url": "http://fhir.org/guides/intrahealth/ihris-relationship/ImplementationGuide/fhir.intrahealth.ihris-relationship",
+    "version": "0.2.0",
+    "name": "iHRIS Relationship"
+  },
+  {
+    "id": "svc-map-qr-uvci-bundle",
+    "type": "StructureMap",
+    "url": "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle",
+    "version": "0.2.0",
+    "name": "svc-map-qr-uvci-bundle"
+  },
+  {
+    "id": "ihris-relationship",
+    "type": "StructureDefinition",
+    "url": "https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-relationship",
+    "version": "0.2.0",
+    "name": "IhrisRelationship"
+  },
+  {
+    "id": "ihris-report-details",
+    "type": "StructureDefinition",
+    "url": "https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-report-details",
+    "version": "0.2.0",
+    "name": "IhrisReportDetails"
+  },
+  {
+    "id": "ihris-report-element",
+    "type": "StructureDefinition",
+    "url": "https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-report-element",
+    "version": "0.2.0",
+    "name": "IhrisReportElement"
+  },
+  {
+    "id": "ihris-report-link",
+    "type": "StructureDefinition",
+    "url": "https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-report-link",
+    "version": "0.2.0",
+    "name": "IhrisReportLink"
+  }
+]
