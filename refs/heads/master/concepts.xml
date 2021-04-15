@@ -9,34 +9,37 @@
   </p>
   <ul>
     <li>
-      The primary resource is defined under the iHRISReportDetails extension
+      The primary resource is defined under the <a href="StructureDefinition-ihris-report-details.html">iHRISReportDetails</a> extension
       <ul>
-	<li> the name must be unique</li>
-	<li> resource is just the resource name that you are adding to the relationship</li>
-	<li> query is a FHIR path on how you want the resource you are adding to be filtered</li>
+	      <li> <b>name</b> must be unique</li>
+	      <li> <b>label</b> is the field name to be created in elasticsearch and must be unique</li>
+	      <li> <b>resource</b> is just the resource name that you are adding to the relationship</li>
+	      <li> <b>query</b> is a FHIR path on how you want the resource you are adding to be filtered</li>
+	      <li> <b>cachingDisabled</b> </li>
+	      <li> <b>displayCheckbox</b> </li>
       </ul>
     </li>
     <li>
-      The fields of any joined resources in the relationship are defined under the iHRISReportElement extension.
+      The fields of any joined resources in the relationship are defined under the <a href="StructureDefinition-ihris-report-element.html">iHRISReportElement</a> extension.
       <ul>
-	<li>label is the field name to be created in elasticsearch and must be unique</li>
-	<li>display is the human readable field name and it is used by the datamart (e.g. ElasticSaerch) to be displayed to systems </li>
-	<li>name is the FHIR path to the resource field</li>
-	<li>filter and dropDownFilter are both used  to tell if a field should be displayed as a filter and whether it should be a drop down of values or not respectively.  This is not reuiqred if you dont need these if you dont want to use the iHRIS reporting engine to display ES data</li>
+	      <li><b>label</b> is the field name to be created in elasticsearch and must be unique</li>
+	      <li><b>display</b> is the human readable field name and it is used by the datamart (e.g. ElasticSaerch) to be displayed to systems </li>
+	      <li><b>name</b> is the FHIR path to the resource field</li>
+	      <li><b>filter</b>  is used tell if a field should be displayed as a filter.  This is not required if you dont want to use the iHRIS reporting engine to display ElasticSearch data</li>
+	      <li><b>dropDownFilter</b> is used  to tell if a field should be displayed as a filter with a list of drop down of values.  This is not required if you dont want to use the iHRIS reporting engine to display ElasticSearch data</li>
+
       </ul>
     </li>
     <li>
-      You join other resources to the primary resource by using the iHRISReportLink extension.
+      You join other resources to the primary resource by using the <a href="StructureDefinition-ihris-report-link.html">iHRISReportLink</a> extension.
       <ul>
-	<li> the name must be unique</li>
-	<li> resource is just the resource name that you are adding to the relationship</li>
-	<li> query is a FHIR path on how you want the resource you are adding to be filtered</li>
-	<li>linkElement is the field that this resource uses to link to the resource in the relationship </li>
-	<li>linkTo is the name of the resource it links to (this isnt a resource name but it is the name extension under either iHRISReportLink or iHRISReportDetails, which is unique in the relationship)</li>
-	<li>linkElementSearchParameter is used for reverse linked resources.  For example only, if you start with Practitioner and then join PractitionerRole, you will need to tell the search parameter for practitioner in PractitionerRole, which is 'practitioner', but if you start with PractitionerRole and then join Practitioner then you don't need this.</li>
+	      <li> <b>name</b> must be unique</li>
+	      <li> <b>resource</b> is just the resource name that you are adding to the relationship</li>
+              <li> <b>query</b> is a FHIR path on how you want the resource you are adding to be filtered</li>
+	      <li><b>linkElement</b> is the field that this resource uses to link to the resource in the relationship </li>
+	      <li><b>linkTo</b> is the name of the resource it links to (this isnt a resource name but it is the name extension under either iHRISReportLink or iHRISReportDetails, which is unique in the relationship)</li>
+	      <li><b>linkElementSearchParameter</b> is used for reverse linked resources.  For example only, if you start with Practitioner and then join PractitionerRole, you will need to tell the search parameter for practitioner in PractitionerRole, which is 'practitioner', but if you start with PractitionerRole and then join Practitioner then you don't need this.</li>
       </ul>
-
-
     </li>
   </ul>
 
