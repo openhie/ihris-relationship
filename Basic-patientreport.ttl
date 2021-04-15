@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/intrahealth/ihris-relationship/Basic/patientreport> a fhir:Basic;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patientreport"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-07-30T07:34:24.098+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISRelationship";
+       fhir:index 0;
+       fhir:link <http://ihris.org/fhir/StructureDefinition/iHRISRelationship>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://ihris.org/fhir/ValueSet/ihris-resource iHRISRelationship}\">iHRISRelationship</span></p><p><b>subject</b>: <a href=\"StructureDefinition/Patient\">StructureDefinition/Patient</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "label" ];
+       fhir:Extension.valueString [ fhir:value "Patient Report" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "name" ];
+       fhir:Extension.valueString [ fhir:value "patients" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "gender" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "gender" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "birthDate" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "birthDate" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "given" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "name.where(use='official').last().given" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "family" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "name.where(use='official').last().family" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "fullname" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "name.where(use='official').last().text" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "phone" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "telecom.where(system='phone').value" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "nationalid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "identifier.where(system='http://clientregistry.org/nationalid').last().value" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "label" ];
+         fhir:Extension.valueString [ fhir:value "art" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "name" ];
+         fhir:Extension.valueString [ fhir:value "identifier.where(system='http://clientregistry.org/artnumber').value" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportElement" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://ihris.org/fhir/StructureDefinition/iHRISReportDetails" ]
+  ];
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ihris.org/fhir/ValueSet/ihris-resource" ];
+       fhir:Coding.code [ fhir:value "iHRISRelationship" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "iHRISRelationship" ]
+  ];
+  fhir:Basic.subject [
+     fhir:link <http://fhir.org/guides/intrahealth/ihris-relationship/StructureDefinition/Patient>;
+     fhir:Reference.reference [ fhir:value "StructureDefinition/Patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/intrahealth/ihris-relationship/Basic/patientreport.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

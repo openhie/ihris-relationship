@@ -345,6 +345,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://ihris.org/fhir/StructureDefinition/iHRISReportDetails": [
+      "Basic"
+    ],
     "https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-report-details": [
       "Basic"
     ],
