@@ -1,0 +1,25 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: intrahealth.ihris-relationship
+canonical: https://intrahealth.github.io/ihris-relationship
+name:  ihris-relationship
+status: draft
+version: 0.0.1
+fhirVersion: 4.0.1
+# copyright:
+copyrightYear: 2021+
+releaseLabel: ci-build
+title: iHRIS Relationship
+description: TODO
+license: CC-BY-SA-4.0
+publisher:
+  name: IntraHealth
+  url: http://intrahealth.org
+#   email:
+# contact:
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
+# experimental: true
+#dependencies:
+
