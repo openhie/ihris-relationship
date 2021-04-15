@@ -426,17 +426,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureMap" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/intrahealth/ihris-relationship/StructureMap/svc-map-qr-uvci-bundle>;
-         fhir:Reference.reference [ fhir:value "StructureMap/svc-map-qr-uvci-bundle" ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -446,7 +435,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Details of a report" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines the primary resource of the relationship" ]
      ], [
-       fhir:index 2;
+       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -459,7 +448,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Links to the primary resource" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Links to the primary resource" ]
      ], [
-       fhir:index 3;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -472,7 +461,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resource Fields" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lists fields of a resource to be displayed/cached" ]
      ], [
-       fhir:index 4;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -7,13 +7,6 @@
     "name": "iHRIS Relationship"
   },
   {
-    "id": "svc-map-qr-uvci-bundle",
-    "type": "StructureMap",
-    "url": "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle",
-    "version": "0.2.0",
-    "name": "svc-map-qr-uvci-bundle"
-  },
-  {
     "id": "ihris-relationship",
     "type": "StructureDefinition",
     "url": "https://intrahealth.github.io/ihris-relationship/StructureDefinition/ihris-relationship",
