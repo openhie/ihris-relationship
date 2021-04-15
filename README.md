@@ -1,19 +1,19 @@
-WHO Smart Vaccination Card (SVC) - Release Candidate 2 (RC2) 
+iHRIS Relatiobship
 ---
-This is the WHO Smart Vaccination Card (SVC) Release Candidate 2 (RC2)
-<br> </br>
+This is the source for the iHRIS Relationship IG
+
 ###
 ### Publication
 This ImplementationGuide is published in the following locations:
 
 
-Continuous Build: __https://who-int.github.io/svc/refs/heads/rc2__  
+Continuous Build: __https://openhie.github.io/ihris-relationship__  
 Canonical / permanent URL: 
 <br> </br>
 
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/who-int/svc/issues__  
-    or the Kanban board: __https://github.com/who-int/svc/projects/1__
+Issues:  __https://github.com/intrahealth/ihris-relationship/issues__  
+    or the Kanban board: __https://github.com/intrahealth/ihris-relationship/svc/projects/1__
 
