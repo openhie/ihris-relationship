@@ -1,4 +1,4 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+G<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 
   <p>
   You can use iHRIS relationships to define howto to cache data form a FHIR Server (e.g. HAPI) into a datamart and search engine (e.g. ElasticSearch) through utilities such as <a href="https://github.com/intrahealth/fhir2es">fhir2es</a>.
@@ -49,7 +49,7 @@
 
 
   <p>
-    There is an <a href="https://github.com/intrahealth/fhir2es">example</a> of one of the relationships that can be loaded into HAPI and fhir2es will index data based on the definition
+    There is an <a href="Basic-patientreport.html">example</a> of one of the relationships that can be loaded into HAPI and fhir2es will index data based on the definition
   </p>
 
 
