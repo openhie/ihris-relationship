@@ -49,7 +49,7 @@
 
 
   <p>
-    There is an <a href="https://github.com/intrahealth/fhir2es">example</a> of one of the relationships that can be loaded into HAPI and fhir2es will index data based on the definition
+    There is an <a href="Basic-patientreport.html">example</a> of one of the relationships that can be loaded into HAPI and fhir2es will index data based on the definition
   </p>
 
 

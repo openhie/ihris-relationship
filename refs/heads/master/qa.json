@@ -3,10 +3,10 @@
   "name": "iHRIS Relationship",
   "package-id": "fhir.intrahealth.ihris-relationship",
   "ig-ver": "0.2.0",
-  "date": "Thu, 15 Apr, 2021 17:46:05 +0000",
-  "errs": 8,
-  "warnings": 5,
-  "hints": 0,
+  "date": "Thu, 15 Apr, 2021 19:36:06 +0000",
+  "errs": 19,
+  "warnings": 7,
+  "hints": 1,
   "version": "4.0.1",
   "tool": "4.5.0 (3)"
 }
